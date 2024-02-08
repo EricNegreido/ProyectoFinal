@@ -21,7 +21,7 @@ import {__mainDirname} from './utils.js'
 import handleConnection from './chatApp/chat.js';
 const app = express();
 
-const PORT =  8080;
+const PORT =  process.env || 8080;
 
 const swaggerOptions = {
     definition:{
