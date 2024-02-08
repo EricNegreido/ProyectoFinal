@@ -131,3 +131,4 @@
 {"level":"fatal","message":"Route not found: POST /api/carts/65c4067636505193a7835062/purchaser"}
 {"level":"fatal","message":"Route not found: POST /api/carts/65c4067636505193a7835062/purchaser"}
 {"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}

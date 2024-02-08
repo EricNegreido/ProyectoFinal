@@ -21,6 +21,8 @@ import {__mainDirname} from './utils.js'
 import handleConnection from './chatApp/chat.js';
 const app = express();
 
+const PORT = process.env.PORT || 8080;
+
 const swaggerOptions = {
     definition:{
         openapi: '3.0.1',
@@ -65,7 +67,7 @@ app.use('/', viewsRouter);
 
 app.use(fatalLogger);
 
-const httpServer  = app.listen(8080, () => console.log('server running'));
+const httpServer  = app.listen(PORT, () => console.log('server running'));
 
 const io = new Server(httpServer);
  
