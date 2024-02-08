@@ -1,6 +1,4 @@
-import config from "../config/config.js";
-
-const persistence = config.persistence;
+const persistence = process.env.PERSISTENCE;
 let Product;
 let Cart;
 
@@ -8,7 +6,7 @@ switch(persistence) {
     case 'MONGO':
         console.log('Persistence: Data Base')
         const mongoose = await import('mongoose');
-        await mongoose.connect(config.mongoUrl);
+        await mongoose.connect(process.env.MONGO_URL);
         console.log('BBD connected App');
 
         const { default: ProductMongo } = await import('./dbManagers/products.manager.js');

@@ -8,6 +8,8 @@ export default {
     gitSecrete : process.env.GIT_SECRETE,
     userAdmin : process.env.USER_ADMIN,
     passwordAdmin : process.env.PASSW_ADMIN,
-    persistence: process.env.PERSISTENCE
+    persistence: process.env.PERSISTENCE,
+    enviroment: process.env.ENVIRONMENT,
+    forgetKey: process.env.FORGET_KEY
 
 }
