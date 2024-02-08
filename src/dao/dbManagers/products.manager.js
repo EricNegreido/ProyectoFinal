@@ -1,12 +1,13 @@
-import {productsModel} from '../models/products.models.js';
+import {productsModel} from './models/products.models.js';
 
 export default class Products {
     constructor(){
         console.log("Working products with DB");
     }
 
-    getAll = async () => {
-        const products = await productsModel.find().lean(); // Con .lean() convertimos a un objetos manipulable en java
+    getAll = async (limit, page, sort, query) => {
+        const filtro = query ? {title: query} : {}; 
+        const products = await productsModel.paginate(filtro, { sort: {price : sort}, limit: limit, page: page, lean: true});
         return products;
 
     }
@@ -22,6 +23,10 @@ export default class Products {
 
     update = async (id, product) => {
         const result = await productsModel.updateOne({_id: id}, product);
+        return result
+    }
+    delete = async(id) =>{
+        const result = await productsModel.deleteOne({_id : id})
         return result
     }
 }

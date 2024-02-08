@@ -1,0 +1,133 @@
+{"level":"error","message":"GET en /api/loggerTest - 2023-12-03T16:13:23.677Z"}
+{"level":"fatal","message":"prueba fatal"}
+{"level":"error","message":"prueba error"}
+{"level":"error","message":"GET en /api/loggerTest - 2023-12-03T16:17:21.651Z"}
+{"level":"fatal","message":"prueba fatal"}
+{"level":"error","message":"prueba error"}
+{"level":"error","message":"GET en /api/loggerTest - 2023-12-03T16:18:00.804Z"}
+{"level":"fatal","message":"prueba fatal"}
+{"level":"error","message":"prueba error"}
+{"level":"error","message":"GET en /api/loggerTest - 2023-12-03T16:18:26.455Z"}
+{"level":"fatal","message":"prueba fatal"}
+{"level":"error","message":"prueba error"}
+{"level":"error","message":"GET en /api/loggerTest - 2023-12-03T16:18:28.844Z"}
+{"level":"fatal","message":"prueba fatal"}
+{"level":"error","message":"prueba error"}
+{"level":"error","message":"GET en /api/loggerTest - 2023-12-03T16:18:58.633Z"}
+{"level":"fatal","message":"prueba fatal"}
+{"level":"error","message":"prueba error"}
+{"level":"error","message":"GET en /api/products/123 - 2023-12-03T16:19:16.148Z"}
+{"level":"error","message":"GET en /api/products/123 - 2023-12-03T16:20:27.456Z"}
+{"level":"error","message":"Error al obtener el carrito"}
+{"level":"error","message":"error getting carts"}
+{"level":"error","message":"error getting carts"}
+{"level":"error","message":"error getting carts"}
+{"level":"fatal","message":"Ruta no encontrada: GET /favicon.ico"}
+{"level":"fatal","message":"Ruta no encontrada: GET /loginn"}
+{"level":"fatal","message":"Ruta no encontrada: GET /carts/"}
+{"level":"fatal","message":"Route not found: GET /carts"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /register"}
+{"level":"fatal","message":"Route not found: POST /api/sessions/register"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: POST /register"}
+{"level":"fatal","message":"Route not found: POST /api/register"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /carts/"}
+{"level":"fatal","message":"Route not found: GET /api/sessions/github"}
+{"level":"fatal","message":"Route not found: GET /api/sessions/github"}
+{"level":"error","message":"error obtaining product"}
+{"level":"fatal","message":"Route not found: GET /api/carts"}
+{"level":"fatal","message":"Route not found: GET /carts/"}
+{"level":"fatal","message":"Route not found: GET /api/carts"}
+{"level":"error","message":"error when adding the product"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: POST /api/session/forget-password"}
+{"level":"fatal","message":"Route not found: POST /api/session/forget-password"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: POST /api/sessions/forgetPassword"}
+{"level":"fatal","message":"Route not found: GET /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWJjMTRmZGNmYmJkNThmMDgxMmU5NjkiLCJpYXQiOjE3MDY5MTg0NDEsImV4cCI6MTcwNjkyMjA0MX0.sGWI_PcaCFkfkl8dARJm4Ej6Ko5Hu4r1_B34HR4VgRY"}
+{"level":"fatal","message":"Route not found: POST /reset-password"}
+{"level":"fatal","message":"Route not found: POST /reset-password"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /api/users/premium"}
+{"level":"fatal","message":"Route not found: GET /api/users/premium"}
+{"level":"fatal","message":"Route not found: GET /api/users/premium"}
+{"level":"fatal","message":"Route not found: GET /api/users/premium"}
+{"level":"fatal","message":"Route not found: GET /api/users/premium"}
+{"level":"fatal","message":"Route not found: GET /api/users/premium"}
+{"level":"fatal","message":"Route not found: POST /premium/:"}
+{"level":"fatal","message":"Route not found: POST /premium/:"}
+{"level":"fatal","message":"Route not found: PUT /premium/"}
+{"level":"fatal","message":"Route not found: PUT /premium/:"}
+{"level":"fatal","message":"Route not found: PUT /apir/users/premium/:"}
+{"level":"fatal","message":"Route not found: PUT /apir/users/premium/:"}
+{"level":"fatal","message":"Route not found: PUT /apir/users/premium/:"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: PUT /api/users/premium/"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: PUT /api/users/premium/"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"error","message":"error adding product"}
+{"level":"error","message":"error adding product"}
+{"level":"error","message":"error adding product"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"error","message":"error removing product"}
+{"level":"error","message":"error removing product"}
+{"level":"error","message":"error removing product"}
+{"level":"error","message":"error removing product"}
+{"level":"error","message":"error removing product"}
+{"level":"fatal","message":"Route not found: GET /carts/"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"error getting carts"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"cart purchase error"}
+{"level":"fatal","message":"Route not found: GET /api/login"}
+{"level":"fatal","message":"Route not found: GET /api/sessions/login"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"cart purchase error"}
+{"level":"error","message":"cart purchase error"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}
+{"level":"fatal","message":"Route not found: GET /carts/"}
+{"level":"fatal","message":"Route not found: GET /carts/"}
+{"level":"fatal","message":"Route not found: GET /carts/"}
+{"level":"error","message":"successfully generated tickt"}
+{"level":"fatal","message":"Route not found: POST /api/mail"}
+{"level":"fatal","message":"Route not found: POST /api/carts/65c4067636505193a7835062/purchaser"}
+{"level":"fatal","message":"Route not found: POST /api/mail"}
+{"level":"fatal","message":"Route not found: POST /api/carts/65c4067636505193a7835062/purchaser"}
+{"level":"fatal","message":"Route not found: POST /api/carts/65c4067636505193a7835062/purchaser"}
+{"level":"fatal","message":"Route not found: GET /favicon.ico"}

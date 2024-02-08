@@ -1,0 +1,15 @@
+<h1>Configuración de cuenta</h1>
+
+  <p>Estado actual: <span id="userStatus">{{userRol}}</span></p>
+
+  <form id="userForm">
+    {{#if isUser}}
+      <label for="premiumCheckbox">Cambiar a Premium:</label>
+    {{else}}
+      <label for="premiumCheckbox">Cambiar a User:</label>
+    {{/if}}
+    <input type="checkbox" id="premiumCheckbox" name="premiumCheckbox">
+    <input type="hidden" id="userId" value="{{userId}}">
+    <button type="button" onclick="updateUserStatus()">Guardar cambios</button>
+  </form>
+  <script src="/js/premium.js"></script>

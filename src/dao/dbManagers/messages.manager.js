@@ -1,4 +1,4 @@
-import {messagesModel} from '../models/messages.models.js';
+import {messagesModel} from '../dbManagers/models/messages.models.js';
 
 export default class Message {
     constructor(){
@@ -17,6 +17,3 @@ save = async (message) => {
 
 }
 
-// import Message from "../../dao/dbManagers/messages.manager.js";
-
-// const messageManager = new Message();

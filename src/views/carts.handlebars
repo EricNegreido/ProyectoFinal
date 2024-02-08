@@ -1,5 +1,12 @@
 {{#each products}}
+
     <p> {{this.title}}</p>
-    <p> {{this.description}}</p>
-    <p> {{this.price}}</p>
+    <p> Description: {{this.description}}</p>
+    <p> Price: {{this.price}}</p>
+    </br>
 {{/each}}
+
+
+<p> <a href="/products"> Ver mas productos </a></p>
+<button id="buyButton" data-cartsId="{{cid}}">Buy</button>
+<script src="/js/cartBuy.js"></script>

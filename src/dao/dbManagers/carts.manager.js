@@ -1,4 +1,4 @@
-import {cartsModel} from '../models/carts.models.js';
+import {cartsModel} from './models/carts.models.js';
 
 export default class Carts {
     constructor(){
@@ -6,19 +6,27 @@ export default class Carts {
     }
 
     getArray= async (cid) => {
-        const carts = await cartsModel.findById({_id: cid}).lean(); // Con .lean() convertimos a un objetos manipulable en java
+        const carts = await cartsModel.findById({_id: cid}).lean().populate('products.product'); // Con .lean() convertimos a un objetos manipulable en java
         return carts;
 
     }
-    save = async (cart) => {
-        const result = await cartsModel.create(cart);
+    save = async () => {
+        const result = await cartsModel.create({products:[]});
         return result;
     }
 
     update = async (id, products) => {
-        const result = await cartsModel.updateOne({_id: id}, products);
+        const result = await cartsModel.updateOne({_id: id},{products: products});
         return result
     }
+
+    delete = async(id) =>{
+        const result = await cartsModel.deleteOne({_id: id});
+        return result
+
+    }
+    
+    
 }
 
 

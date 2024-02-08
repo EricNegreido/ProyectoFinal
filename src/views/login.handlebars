@@ -1,0 +1,26 @@
+<div>
+    <h1>Log in</h1>
+    <form id="loginForm">
+    <label>Email</label>
+    <input name="email">
+    <br/>
+    <label>Password</label>
+    <input name="password" type="password">
+    <input type="submit">
+
+    </form>
+    <p> <a href="/register"> --Register-- </a></p>
+    <p> <a href="/api/sessions/github"> --Iniciar con Git Hub-- </a></p>
+    <h2>Recuperar Contraseña</h2>
+    <form id="forgetPasswordForm">
+        <label>Email</label>
+        <input name="resetEmail" type="email">
+        <input type="submit" value="Enviar enlace de restablecimiento">
+    </form>
+
+    <div id="resetMessage"></div>
+
+
+</div>
+<script src="/js/login.js"></script>
+<script src="/js/forgetPassword.js"></script>

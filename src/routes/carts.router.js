@@ -1,71 +1,25 @@
 import { Router } from "express";
-import Carts from '../dao/dbManagers/carts.manager.js';
-import Products from '../dao/dbManagers/products.manager.js';
+import { getCart, addCart, addCartProduct, updateCartProduct, deleteCart, deleteCartProduct, cartPurchaser} from "../controllers/carts.controller.js";
+import toAsyncRouter from "async-express-decorator";
+import { passportCall } from "../middleware/passportCall.js";
 
 
-const router = Router();
-const cartsManager = new Carts();
-const productsManager = new Products();
+const router = toAsyncRouter(Router());
 
 
-router.get('/:cid', async (req, res) =>{
 
-    const {cid} = req.params;
-    try{
-        const carts = await cartsManager.getArray(cid);
-        res.send({status: 'sucess', payload: carts});
-    }catch(error){
-        res.status(500).send({status: 'error', error: error.message})
-    }
+router.get('/:cid', getCart);
 
-});
+router.post('/', addCart);
 
-router.post('/', async (req, res) =>{
-    
-    try{
-        const result = await cartsManager.save();
-        res.status(201).send({status: 'sucess', payload: result}); 
+router.post("/:cid/products/:pid", addCartProduct);
 
-    }catch(error){
-        res.status(500).send({status: 'error', error: error.message})
-    }
-});
+router.put("/:cid/products/:pid", updateCartProduct);
 
-router.post("/:cid/product/:pid", async (req, res) => {
-    try {
-        const cid = req.params.cid;
-        const pid = req.params.pid;
-        const { quantity } = req.body;
+router.delete("/:cid/products/:pid", deleteCartProduct);
 
-        const cart = await cartsManager.getArray(cid)
-        const product = await productsManager.getById(pid);
+router.delete("/:cid", deleteCart);
 
-        if(cart){
-
-
-            if (product) {
-                const existingProduct = cart.products.find(item => item.id === pid);
-                if (existingProduct) {
-
-                    existingProduct.quantity += quantity || 1;
-                } else {
-
-                    cart.products.push({ id: pid, quantity: quantity || 1 });
-                }
-        }
-
-     }
-
-
-    const result = await cartsManager.update(cid, { products: cart.products });
-    console.log(result)
-    res.status(201).send({status: 'sucess', payload: result}); 
-
-
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'ERROR AL AGREGAR EL PRODUCTO' });
-    }
-});
+router.get("/:cid/purchaser", passportCall('jwt'), cartPurchaser);
 
 export default router;
